@@ -16,14 +16,22 @@ export default function Home({ repodata, userdata }) {
     <div className="IndexMain">
       <div className="IndexLeft30">
         <div className="IndexLeftAvatarSec">
-          <img
+          <Image
+            src="https://avatars.githubusercontent.com/u/95009807?v=4"
+            height={100}
+            width={100}
+            alt={userdata.name}
+          />
+          {/* <img
             style={{ borderRadius: "50%" }}
             width={"150px"}
             height={"150px"}
             src="https://avatars.githubusercontent.com/u/95009807?v=4"
             alt=""
-          />
-          <p style={{ fontSize: "1.5rem", fontWeight: "600" }}>{userdata.name}</p>
+          /> */}
+          <p style={{ fontSize: "1.5rem", fontWeight: "600" }}>
+            {userdata.name}
+          </p>
           <p>@{userdata.login}</p>
           <Link href="https://drive.google.com/file/d/1rzydD2R905DRz60E6Mx6ukZKEWTkGsEE/view?usp=sharing">
             <Button variant="contained">Resume</Button>
@@ -43,7 +51,7 @@ export default function Home({ repodata, userdata }) {
           <Button variant="outlined">Reactjs</Button>
         </div>
         <div
-         className="Experiencesec"
+          className="Experiencesec"
           style={{
             gap: "5px",
             padding: "1rem",
