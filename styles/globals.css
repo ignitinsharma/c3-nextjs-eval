@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.Navbardiv {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: 2px solid #ede6e6;
+  background-color: #13B987;
+}
+.Navbardiv a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+/* Index page */
+.IndexMain {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.IndexLeft30 {
+  height: auto;
+  width: 30%;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.IndexLeftAvatarSec {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+.IndexLeftAvatarSec > p {
+  margin-top: 0.5rem;
+}
+.IndexLeftAvatarSec button {
+  margin-top: 0.8rem;
+  margin-left: 0.4rem;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.Techstacksection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 10px;
+}
+
+.Rightsection70 {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  padding: 2rem 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Experience Section */
+
+.MainExpDiv {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 2px solid rgb(53, 55, 56);
+}
+
+/* Project Section */
+
+.ExperienceParent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+
+.ExperienceContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(53, 55, 56);
+  padding: 1rem;
+  align-items: center;
+}
+
+.ExperienceDataDiv {
+  display: block;
+  align-items: center;
+}
+
+.ExperienceDataDiv > p {
+  padding: 0.5rem 0;
+}
+.Git_forkDiv {
+display: flex;
+align-items: center;
+}
+.Git_forkDiv span{
+  margin: 0 0.3rem;
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .IndexMain {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .IndexLeft30 {
+    height: auto;
+    width: 90%;
+  }
+  .Rightsection70 {
+    width: 90%;
+  }
+  .ExperienceParent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .IndexMain {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .IndexLeft30 {
+    height: auto;
+    width: 90%;
+  }
+  .Rightsection70 {
+    width: 90%;
+  }
+  .ExperienceParent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .IndexMain {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .IndexLeft30 {
+   
+    width: 90%;
+    border: 1px solid black;
+  }
+  .Rightsection70 {
+    width: 90%;
+  }
+  .ExperienceParent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+
+  .Navbardiv{
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  .IndexMain {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .IndexLeft30 {
+   
+    width: 90%;
+    border: 1px solid black;
+  }
+  .Rightsection70 {
+    width: 90%;
+  }
+  .ExperienceParent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+
+  .Navbardiv a {
+    font-size: 12px;
+  }
+}
