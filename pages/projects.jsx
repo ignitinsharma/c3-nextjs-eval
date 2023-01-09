@@ -13,7 +13,7 @@ const Projects = ({ data }) => {
         <Link href={data.html_url} key={data.id}>
           <div className="ExperienceContainer">
             <div className="ExperienceDataDiv">
-              <div style={{display:'flex',alignItems:'center'}}>
+              <div style={{ display: "flex", alignItems: "center" }}>
                 <FolderIcon />{" "}
                 <span style={{ fontSize: "1rem", fontWeight: "400" }}>
                   {data.name}
@@ -22,7 +22,7 @@ const Projects = ({ data }) => {
               <p style={{ fontSize: "12px", fontWeight: "400" }}>
                 {data.description}
               </p>
-              <div className="Git_forkDiv" >
+              <div className="Git_forkDiv">
                 <StarBorderIcon /> <span>{data.watchers}</span>
                 <GitHubIcon /> <span>{data.forks}</span>
               </div>
@@ -35,7 +35,7 @@ const Projects = ({ data }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const repositories = await fetch(
     "https://api.github.com/search/repositories?q=user:ignitinsharma+fork:true&sort=updated&per_page=10&type=Repositories"
   );
